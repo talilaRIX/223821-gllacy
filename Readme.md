@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Tatiana Karlin](https://up.htmlacademy.ru/htmlcss/18/user/223821).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
