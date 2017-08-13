@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-	<meta charset="utf-8">
-	<title>Глейси - магазин мороженого </title>
+    <meta charset="utf-8">
+    <title>Глейси - магазин мороженого </title>
   </head>
   <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <div class="main-header-logo">
-        <img src="http://via.placeholder.com/160x60" width="160" height="60" alt="Логотип Глейси">
-      </div>
-      <ul class="main-menu">
-        <li><a href="catalog.html">Каталог</a>
-        <!--Где показать активное состояние кнопки Каталог (при наведении) ?-->
-          <div class="sub-menu dropdown">
-            <ul>
-              <li><a class="sub-menu-item featured" href="new-products.html">Новинки</a></li>
-              <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
-              <li><a class="sub-menu-item current" href="#">Щербеты</a></li>
-              <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
-              <li><a class="sub-menu-item" href="#">Мелорин</a></li>
-             </ul>
-          </div>
-        </li>
-        <li><a href="delivery.html">Доставка и оплата</a></li>
-        <li><a href="about.html">О Компании</a></li>
-      </ul>
-
-      <!--В блоке "user-menu" (что идет ниже) можно ли использовать список ul, или div ?-->
-      <ul class="user-menu">
-        <li class="user-menu-item">
-        <a class="site-search-link" href="site-search.html">Поиск</a>
-        <!--Как прописать, что форма ниже будет появляться при наведении на кнопку "Поиск"?-->
-        <div class="site-search">
-          <form class="site-search" action="" method="post">
-          <p>
-          <input type="search" name="search" placeholder="Что ищем?">
-          <input type="submit">
-          </p>
-          </form>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="main-header-logo">
+          <img src="http://via.placeholder.com/160x60" width="160" height="60" alt="Логотип Глейси">
         </div>
-        </li>
+        <ul class="main-menu">
+          <li><a href="catalog.html">Каталог</a>
+            <!--Где показать активное состояние кнопки Каталог (при наведении) ?-->
+            <div class="sub-menu dropdown">
+              <ul>
+                <li><a class="sub-menu-item sub-menu-item-featured" href="#">Новинки</a></li>
+                <li><a class="sub-menu-item" href="catalog.html">Сливочное</a></li>
+                <li><a class="sub-menu-item current" href="#">Щербеты</a></li>
+                <li><a class="sub-menu-item" href="#">Фруктовый лед</a></li>
+                <li><a class="sub-menu-item" href="#">Мелорин</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О Компании</a></li>
+        </ul>
 
-        <li class="user-menu-item">
-        <a class="login-link" href="login.html">Вход</a>
-        <!--Как прописать, что форма ниже будет появляться при наведении на кнопку "Вход"?-->
-        <div class="login">
-          <h2 class="visually-hidden">Авторизация</h2>
-          <form class="login-form" action="" method="post">
-          <p><input type="text" name="e-mail" placeholder="Электронная почта"></p>
-          <p><input type="text" name="password" placeholder="Пароль"></p>
-          <button class="button" type="submit">Войти</button>
-          <a class="login-form" href="#">Забыли пароль?</a>
-          <a class="login-form" href="#">Новая регистрация</a>
-          </form>
-        </div>
-        </li>
+        <!--В блоке "user-menu" (что идет ниже) можно ли использовать список ul, или div ?-->
+        <ul class="user-menu">
+          <li class="user-menu-item">
+            <a class="site-search-link" href="#">Поиск</a>
+            <!--Как прописать, что форма ниже будет появляться при наведении на кнопку "Поиск"?-->
+            <div class="site-search">
+              <form class="site-search" action="" method="post">
+                <p>
+                  <input type="search" name="search" placeholder="Что ищем?">
+                  <input type="submit">
+                </p>
+              </form>
+            </div>
+          </li>
 
-        <li class="user-menu-item">
-        <a class="cart-link" href="cart.html">Пусто</a>
-        </li>
-      </ul>
-    </nav>
-    <p>С 10 до 20 ежедневно<br>
-      <span class="contacts-details">8 812 450-25-25</span>
+          <li class="user-menu-item">
+            <a class="login-link" href="#">Вход</a>
+            <!--Как прописать, что форма ниже будет появляться при наведении на кнопку "Вход"?-->
+            <div class="login">
+              <h2 class="visually-hidden">Авторизация</h2>
+              <form class="login-form" action="" method="post">
+                <!--В этой форме label не нужны? т.к. только плейсхолдеры здесь?-->
+                <p><input type="text" name="e-mail" placeholder="Электронная почта"></p>
+                <p><input type="text" name="password" placeholder="Пароль"></p>
+                <button class="button" type="submit">Войти</button>
+                <a class="login-form" href="#">Забыли пароль?</a>
+                <a class="login-form" href="#">Новая регистрация</a>
+              </form>
+            </div>
+          </li>
+
+          <li class="user-menu-item">
+            <a class="cart-link" href="#">Пусто</a>
+          </li>
+        </ul>
+      </nav>
+      <p>С 10 до 20 ежедневно<br>
+        <span class="contacts-details">8 812 450-25-25</span>
       </p>
-  </header>
-  <main class="container">
+    </header>
+    <main class="container">
       <section class="slider">
         <h1 class="visually-hidden">Лучшее мороженое магазина Глейси</h1>
         <ul class="slider-list">
@@ -74,12 +75,11 @@
             <p>Крем-брюле и пломбир с малиновым джемом</p>
             <button>Давайте оба!</button>
           </li>
-
+          <!--картинки здесь не ставила, т.к. думаю поставить их через background-image в css. Правильно?-->
           <li class="slider-list-item">
             <p>Шоколадный пломбир и лимонный сорбет</p>
             <button>Давайте оба!</button>
           </li>
-
           <li class="slider-list-item">
             <p>Пломбир с помадкой и клубничный щербет</p>
             <button>Давайте оба!</button>
@@ -91,64 +91,65 @@
         <h2 class="visually-hidden">Промо-акции</h2>
         <div class="promo-banner">
           <h3>Малинка даром!</h3>
-            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button>Хочу варенье!</button>
+          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <button>Хочу варенье!</button>
         </div>
+        <!--картинки здесь не ставила, т.к. думаю поставить их через background-image в css. Правильно?-->
         <div class="promo-banner">
           <h3>Шоколадки даром!</h3>
-            <p>При покупке 2 кг пломбира, добавим в ваш заказ уваковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <button>Хочу шоколадки!</button>
+          <p>При покупке 2 кг пломбира, добавим в ваш заказ уваковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <button>Хочу шоколадки!</button>
         </div>
       </section>
       <section class="products-featured">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <ul class="products-featured-list">
           <li>
-          <a href="#">
-          <img src="#" width="260" height="270" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-          <b><span>310 RUB</span>/кг</b>
-          <span class="hit">хит</span>
-          </a>
+            <a href="#">
+              <img src="#" width="260" height="270" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
+              <b><span>310 RUB</span>/кг</b>
+              <span class="hit">хит</span>
+            </a>
           </li>
 
           <li>
-          <a href="#">
-          <img src="#" width="260" height="270" alt="Сливочно-кофейное с кусочками шоколада">
-          <h4>Сливочно-кофейное с кусочками шоколада</h4>
-          <b><span>380 RUB</span>/кг</b>
-          <span class="hit">хит</span>
-          </a>
+            <a href="#">
+              <img src="#" width="260" height="270" alt="Сливочно-кофейное с кусочками шоколада">
+              <h4>Сливочно-кофейное с кусочками шоколада</h4>
+              <b><span>380 RUB</span>/кг</b>
+              <span class="hit">хит</span>
+            </a>
           </li>
 
           <li>
-          <a href="#">
-          <img src="#" width="260" height="270" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
-          <b><span>355 RUB</span>/кг</b>
-          <span class="hit">хит</span>
-          </a>
+            <a href="#">
+              <img src="#" width="260" height="270" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
+              <b><span>355 RUB</span>/кг</b>
+              <span class="hit">хит</span>
+            </a>
           </li>
 
           <li>
-          <a href="#">
-          <img src="#" width="260" height="270" alt="Сливочное крем-брюле с карамельной подливкой">
-          <h4>Сливочное крем-брюле с карамельной подливкой</h4>
-          <b><span>415 RUB</span>/кг</b>
-          <span class="hit">хит</span>
-          </a>
+            <a href="#">
+              <img src="#" width="260" height="270" alt="Сливочное крем-брюле с карамельной подливкой">
+              <h4>Сливочное крем-брюле с карамельной подливкой</h4>
+              <b><span>415 RUB</span>/кг</b>
+              <span class="hit">хит</span>
+            </a>
           </li>
         </ul>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <b>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</b>
-          <ul>
-            <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием совермееного оборудования и проверенных времененм технологий.</p></li>
-            <li><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговремееное сотрудничество.</p></li>
-            <li><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и до бавки произведены из натурального, экологически чистого сырья.</p></li>
-            <li><p>Доставка нашего мороженого до заказчиков осуществаляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
-          </ul>
+        <ul>
+          <li><p>Все наше мороженое изготавливается на собственном производстве, с использованием совермееного оборудования и проверенных времененм технологий.</p></li>
+          <li><p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговремееное сотрудничество.</p></li>
+          <li><p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и до бавки произведены из натурального, экологически чистого сырья.</p></li>
+          <li><p>Доставка нашего мороженого до заказчиков осуществаляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+        </ul>
       </section>
       <section class="blog-news">
         <h2 class="blog-news">Новое в нашем блоге</h2>
@@ -159,7 +160,7 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="" method="post">
           <p>
-          <input type="text" name="e-mail" placeholder="Электронная почта">
+            <input type="text" name="e-mail" placeholder="Электронная почта">
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
@@ -167,15 +168,15 @@
       <section class="contacts">
         <h2 class="visually-hidden">Свяжитесь с нами!</h2>
         <p>Адрес главного офиса<br>
-        и офлайн магазина:<br>
-        <span>ул.Большая Конюшенная<br>
-        19/8, Санкт-Петербург</span></p>
-        <p>Для заказов по телефону:<p>
-        <span class="contatcs-details">8 812 450-25-25</span>
-        <p>(с 10 до 20 ежедневно)</p>
-        <a class="button contacts-button" href="contacts.html">Форма обратной связи</a>
-        <img class="location-pin" src="pin.png" width="82" height="138" alt="ул.Большая Конюшенная 19/8, Санкт-Петербург">
-      </section>
+          и офлайн магазина:<br>
+          <span>ул.Большая Конюшенная<br>
+          19/8, Санкт-Петербург</span></p>
+          <p>Для заказов по телефону:<p>
+            <span class="contacts-details">8 812 450-25-25</span>
+            <p>(с 10 до 20 ежедневно)</p>
+            <a class="button contacts-button" href="#">Форма обратной связи</a>
+            <img class="location-pin" src="pin.png" width="82" height="138" alt="ул.Большая Конюшенная 19/8, Санкт-Петербург">
+          </section>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
@@ -192,8 +193,8 @@
         <ul>
           <li><a class="details-link featured" href="#">Для поставщиков</a></li>
           <li><a class="details-link" href="#">О производстве</a></li>
-         </ul>
-         <ul>
+        </ul>
+        <ul>
           <li><a class="details-link" href="#">Наши документы</a></li>
           <li><a class="details-link" href="#">Экологические стандарты</a></li>
         </ul>
@@ -201,19 +202,20 @@
       <div class="footer-copyright">
         <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="htmlacademy-logo.png" width="114" height="36" alt="HTML Academy logo"></a>
+        <!--Валидатор мне выдает ошибку Error: Character reference was not terminated by a semicolon.  Как правильно?-->
         <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a>&#169 2017</p>
       </div>
     </footer>
 
-     <section class="modal contact-form">
-    <h2>Мы обязательно ответим!</h2>
-    <form class="contact-form" action="" method="post">
-      <p><input type="text" name="name" placeholder="Как вас зовут?"></p>
-      <p><input type="text" name="e-mail" placeholder="Ваша почта для ответа?"></p>
-      <textarea name="textarea" rows="4">Напишите что-нибудь...</textarea>
-      <button class="button" type="submit">Отправить</button>
-      <span class="modal-close">x</span>
-    </form>
-  </section>
+    <section class="modal contact-form">
+      <h2>Мы обязательно ответим!</h2>
+      <form class="contact-form" action="" method="post">
+        <p><input type="text" name="name" placeholder="Как вас зовут?"></p>
+        <p><input type="text" name="e-mail" placeholder="Ваша почта для ответа?"></p>
+        <textarea name="textarea" rows="4">Напишите что-нибудь...</textarea>
+        <button class="button" type="submit">Отправить</button>
+        <span class="modal-close">x</span>
+      </form>
+    </section>
   </body>
-</html>
+  </html>
