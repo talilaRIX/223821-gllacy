@@ -28,7 +28,7 @@
           </li>
         </ul>
       </nav>
-      <p>С 10 до 20 ежедневно<br>
+      <p>С 10 до 20 ежедневно
         <span class="contacts-details">8 812 450-25-25</span>
       </p>
     </header>
@@ -41,7 +41,7 @@
       <h1>Сливочное мороженое</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" method="get" action="">
+        <form class="filter" method="get" action="?">
           <fieldset>
             <legend>Сортировка:</legend>
             <select name="sorting">
@@ -57,34 +57,48 @@
             <!--В ТЗ сказано "Блок «Цена» — при наведении на любой из маркеров появляется указатель cursor: pointer" Как это сделать?-->
           </fieldset>
           <fieldset>
-            <!--Понимаю, что здесь нужно ставить label. Поставила, но валидатор говорит ошибка. Как правильно? куда, к чему ставить??-->
             <legend>Жирность:</legend>
             <ul class="filters">
               <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="0%">0%</li>
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat-content" id="fat-0" value="fat-0" >
+              <label class="filter-input-label-radio" for="fat-0">0%</label></li>
+
               <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="10%" checked>до 10%</li>
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat-content" id="fat-10" value="10%" checked>
+              <label class="filter-input-label-radio" for="fat-10">до 10%</label></li>
+
               <li class="filter-option">
-            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="30%">30%</li>
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat-content" id="fat-30" value="30%">
+              <label class="filter-input-label-radio" for="fat-30">30%</label></li>
+
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fat-content" value="31%">выше 30%</li>
+              <input class="visually-hidden filter-input-radio" type="radio" name="fat-content" id="fat-31" value="31%">
+              <label class="filter-input-label-radio" for="fat-31">выше 30%</label></li>
             </ul>
           </fieldset>
 
           <fieldset>
-            <!--То же, что и выше - понимаю, что здесь нужно ставить label. Как? куда? -->
             <legend>Наполнители:</legend>
             <ul class="filters">
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filling" value="chocolate" checked>шоколадные</li>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+              <label class="filter-input-label-checkbox" for="chocolate">шоколадные</label></li>
+
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filling" value="sugar" checked>сахарные присыпки</li>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+              <label class="filter-input-label-checkbox" for="sugar">сахарные присыпки</label></li>
+
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filling" value="fruit">фрукты</li>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="fruit" id="fruit">
+              <label class="filter-input-label-checkbox" for="fruit">фрукты</label></li>
+
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filling" value="syrup">сиропы</li>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="syrup" id="syrup">
+              <label class="filter-input-label-checkbox" for="syrup">сиропы</label></li>
+
               <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="filling" value="jam">джемы</li>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="jam" id="jam">
+              <label class="filter-input-label-checkbox" for="jam">джемы</label></li>
             </ul>
           </fieldset>
           <button type="submit" class="filter-button button">Применить</button>
@@ -98,84 +112,84 @@
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <h4>Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-              <b><span>310 RUB</span>/кг</b>
+              <b><span>310  &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочно-кофейное с кусочками шоколада">
               <h4>Сливочно-кофейное с кусочками шоколада</h4>
-              <b><span>380 RUB</span>/кг</b>
+              <b><span>380   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               <h4>Сливочно-клубничное с присыпкой из белого шоколада</h4>
-              <b><span>355 RUB</span>/кг</b>
+              <b><span>355   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное крем-брюле с карамельной подливкой">
               <h4>Сливочное крем-брюле с карамельной подливкой</h4>
-              <b><span>415 RUB</span>/кг</b>
+              <b><span>415   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное c брусничным джемом">
               <h4>Сливочное c брусничным джемом</h4>
-              <b><span>325 RUB</span>/кг</b>
+              <b><span>325   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочно-черничное с цельными ягодами черники">
               <h4>Сливочно-черничное с цельными ягодами черники</h4>
-              <b><span>410 RUB</span>/кг</b>
+              <b><span>410   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочно-лимонное с карамельной присыпкой">
               <h4>Сливочно-лимонное с карамельной присыпкой</h4>
-              <b><span>375 RUB</span>/кг</b>
+              <b><span>375   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное c шоколадной стружкой">
               <h4>Сливочное c шоколадной стружкой</h4>
-              <b><span>320 RUB</span>/кг</b>
+              <b><span>320   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочно-ванильное с кусочками шоколада">
               <h4>Сливочно-ванильное с кусочками шоколада</h4>
-              <b><span>440 RUB</span>/кг</b>
+              <b><span>440   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное c ментоловым сиропом">
               <h4>Сливочное c ментоловым сиропом</h4>
-              <b><span>435 RUB</span>/кг</b>
+              <b><span>435   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное c кусочками черного шоколада">
               <h4>Сливочное c кусочками черного шоколада</h4>
-              <b><span>355 RUB</span>/кг</b>
+              <b><span>355   &#8381;</span>/кг</b>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="#" width="260" height="270" alt="Сливочное c мятным сиропом">
               <h4>Сливочное c мятным сиропом</h4>
-              <b><span>420 RUB</span>/кг</b>
+              <b><span>420   &#8381;</span>/кг</b>
             </a>
           </li>
         </ul>
@@ -214,26 +228,26 @@
         <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="htmlacademy-logo.png" width="114" height="36" alt="HTML Academy logo"></a>
         <!--Валидатор мне выдает ошибку Error: Character reference was not terminated by a semicolon.  Как правильно?-->
-        <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a> &copy 2017</p>
+        <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a>&#0169; 2017</p>
       </div>
     </footer>
 
     <section class="modal modal-cart">
       <h2 class="visually-hidden">Ваша корзина</h2>
-      <span class="modal-close">x</span>
+      <span class="product-remove">x</span>
       <img class="product-thumb" src="product-1.png" width="30" height="30" alt="Продукт в корзине">
-      <span class="modal-close">x</span>
+      <span class="product-remove">x</span>
       <img class="product-thumb" src="product-2.png" width="30" height="30" alt="Продукт в корзине">
       <table class="cart">
         <tr>
           <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5кг х</td>
+          <td>1,5кг &times;</td>
           <td>200 руб.</td>
           <td>300 руб.</td>
         </tr>
         <tr>
           <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х</td>
+          <td>1,5 кг &times;</td>
           <td>300 руб.</td>
           <td>450 руб.</td>
         </tr>
