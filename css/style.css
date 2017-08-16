@@ -1,0 +1,35 @@
+body {
+	color: #323232;
+  font-family: "Roboto", "Arial" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.38;
+}
+
+.title-promo {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.title-main {
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1.17;
+}
+
+.title-secondary {
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.title-product {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.38;
+}
+
+
+.blog-news .title-secondary {
+  text-decoration: underline
+}
