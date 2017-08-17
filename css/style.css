@@ -1,6 +1,6 @@
 body {
 	color: #323232;
-  font-family: "Roboto", "Arial" sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.38;
@@ -23,7 +23,7 @@ body {
   line-height: 1.25;
 }
 
-.title-product {
+.title-catalog-item {
   color: #ffffff;
   font-size: 16px;
   line-height: 1.38;
