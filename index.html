@@ -29,9 +29,10 @@
             <a class="site-search-link" href="#">Поиск</a>
             <div class="site-search">
               <form class="site-search" action="https://echo.htmlacademy.ru" method="get">
-                <p>
-                  <input type="search" name="search" placeholder="Что ищем?">
-                  <input type="submit">
+                <p class="site-search-filed">
+                  <label class="visually-hidden" for="search-field">Поиск</label>
+                  <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+                  <input type="submit" class="visually-hidden">
                 </p>
               </form>
             </div>
@@ -42,8 +43,14 @@
             <div class="login">
               <h2 class="visually-hidden">Авторизация</h2>
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p><input type="email" name="e-mail" placeholder="Электронная почта"></p>
-                <p><input type="password" name="password" placeholder="Пароль"></p>
+                <p>
+                  <label class="visually-hidden" for="login">Логин</label>
+                  <input type="email" name="e-mail" id="login" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually-hidden" for="password">Пароль</label>
+                  <input type="password" name="password" id="password" placeholder="Пароль">
+                </p>
                 <button class="button" type="submit">Войти</button>
                 <a class="login-form" href="#">Забыли пароль?</a>
                 <a class="login-form" href="#">Новая регистрация</a>
@@ -94,34 +101,34 @@
       </section>
       <section class="catalog-hits">
         <h2 class="visually-hidden">Хиты продаж</h2>
-          <article class="catalog-item">
-            <img src="img/product-1-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <h4 class="title-catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
-            <b><span>310 &#8381;</span>/кг</b>
-            <span class="hit">хит</span>
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </article>
-          <article class="catalog-item">
-            <img src="img/product-2-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <h4 class="title-product">Сливочно-кофейное с кусочками шоколада</h4>
-            <b><span>380 &#8381;</span>/кг</b>
-            <span class="hit">хит</span>
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </article>
-          <article class="catalog-item">
-            <img src="img/product-3-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <h4 class="title-catalog-item">Сливочно-клубничное с присыпкой из белого шоколада</h4>
-            <b><span>355 &#8381;</span>/кг</b>
-            <span class="hit">хит</span>
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </article>
-          <article class="catalog-item">
-            <img src="img/product-4-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <h4 class="title-catalog-item">Сливочное крем-брюле с карамельной подливкой</h4>
-            <b><span>415 &#8381;</span>/кг</b>
-            <span class="hit">хит</span>
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </article>
+        <article class="catalog-item">
+          <img src="img/product-1-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <h4 class="title-catalog-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</h4>
+          <b><span>310 &#8381;</span>/кг</b>
+          <span class="hit">хит</span>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <img src="img/product-2-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <h4 class="title-product">Сливочно-кофейное с кусочками шоколада</h4>
+          <b><span>380 &#8381;</span>/кг</b>
+          <span class="hit">хит</span>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <img src="img/product-3-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <h4 class="title-catalog-item">Сливочно-клубничное с присыпкой из белого шоколада</h4>
+          <b><span>355 &#8381;</span>/кг</b>
+          <span class="hit">хит</span>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
+        </article>
+        <article class="catalog-item">
+          <img src="img/product-4-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <h4 class="title-catalog-item">Сливочное крем-брюле с карамельной подливкой</h4>
+          <b><span>415 &#8381;</span>/кг</b>
+          <span class="hit">хит</span>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
+        </article>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -134,6 +141,7 @@
         </ul>
       </section>
       <section class="blog-news">
+        <h2 class="visually-hidden">Новости блога</h2>
         <p class="blog-news">Новое в нашем блоге</p>
         <a class="title-secondary" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </section>
@@ -142,7 +150,8 @@
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
-            <input type="email" name="e-mail" placeholder="Электронная почта">
+            <label class="visually-hidden" for="e-mail">E-mail</label>
+            <input type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
@@ -157,44 +166,49 @@
             <span class="contacts-details">8 812 450-25-25</span>
             <p>(с 10 до 20 ежедневно)</p>
             <a class="button contacts-button" href="#">Форма обратной связи</a>
-      </section>
+          </section>
     </main>
     <footer class="main-footer">
-      <div class="footer-social">
-        <h3 class="visually-hidden">Найдите нас в соцсетях</h3>
-        <ul>
-          <li><a class="button-social" href="#">Твиттер</a></li>
-          <li><a class="button-social" href="#">Инстаграм</a></li>
-          <li><a class="button-social" href="#">Фейсбук</a></li>
-          <li><a class="button-social" href="#">Вконтакте</a></li>
-        </ul>
-      </div>
-      <div class="company-details">
-        <h3 class="visually-hidden">Подробнее о нашей компании</h3>
-        <ul>
-          <li><a class="details-link featured" href="#">Для поставщиков</a></li>
-          <li><a class="details-link" href="#">О производстве</a></li>
-          <li><a class="details-link" href="#">Наши документы</a></li>
-          <li><a class="details-link" href="#">Экологические стандарты</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a>
-        <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a>&#0169; 2017</p>
-      </div>
+        <div class="footer-social">
+          <h3 class="visually-hidden">Найдите нас в соцсетях</h3>
+            <ul>
+              <li><a class="button-social" href="#">Твиттер</a></li>
+              <li><a class="button-social" href="#">Инстаграм</a></li>
+              <li><a class="button-social" href="#">Фейсбук</a></li>
+              <li><a class="button-social" href="#">Вконтакте</a></li>
+            </ul>
+         </div>
+         <div class="company-details">
+            <h3 class="visually-hidden">Подробнее о нашей компании</h3>
+             <ul>
+              <li><a class="details-link featured" href="#">Для поставщиков</a></li>
+              <li><a class="details-link" href="#">О производстве</a></li>
+              <li><a class="details-link" href="#">Наши документы</a></li>
+              <li><a class="details-link" href="#">Экологические стандарты</a></li>
+            </ul>
+         </div>
+         <div class="footer-copyright">
+           <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a>
+           <p><a href="https://htmlacademy.ru/intensive/htmlcss">Сделано в HTML Academy</a>&#0169; 2017</p>
+         </div>
     </footer>
-
     <section class="modal contact-form">
-      <h2>Мы обязательно ответим!</h2>
-      <form class="contact-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p><input type="text" name="name" placeholder="Как вас зовут?"></p>
-        <p><input type="email" name="e-mail" placeholder="Ваша почта для ответа?"></p>
-        <textarea name="textarea" rows="4">Напишите что-нибудь &hellip;</textarea>
-        <button class="button" type="submit">Отправить</button>
-        <span class="modal-close">&times;</span>
-      </form>
+        <h2>Мы обязательно ответим!</h2>
+          <form class="contact-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+             <label class="visually-hidden" for="name">Имя</label>
+             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+            </p>
+            <p>
+             <label class="visually-hidden" for="contact-e-mail">E-mail</label>
+             <input type="email" name="e-mail" id="contact-e-mail" placeholder="Ваша почта для ответа?">
+            </p>
+            <label class="visually-hidden" for="comment">Комментарий</label>
+            <textarea id="comment" name="textarea" rows="4">Напишите что-нибудь &hellip;</textarea>
+            <button class="button" type="submit">Отправить</button>
+            <button class="modal-close">&times;</button>
+          </form>
     </section>
   </body>
 </html>
-

@@ -54,7 +54,8 @@
           </fieldset>
           <fieldset>
             <legend>Цена:100 руб.- 500 руб.</legend>
-            <input class="filter-input filter-input-range" type="range" name="price" min="100" max="500" step="100">
+            <input class="filter-input filter-input-range" id="price-range" type="range" name="price" min="100" max="500" step="100">
+            <label class="visually-hidden" for="price-range">Цена</label>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
@@ -219,7 +220,7 @@
       <h2 class="visually-hidden">Ваша корзина</h2>
       <table class="cart">
         <tr>
-          <td><span class="item-remove">&times;</span></td>
+          <td><button class="item-remove">&times;</button></td>
           <td><img class="catalog-item-thumb" src="img/product-thumb-1-min.png" width="33" height="33" alt="Продукт в корзине"></td>
           <td>Пломбир с апельсиновым джемом</td>
           <td>1,5кг &times;</td>
@@ -227,7 +228,7 @@
           <td>300 руб.</td>
         </tr>
         <tr>
-          <td><span class="item-remove">&times;</span></td>
+          <td><button class="item-remove">&times;</button></td>
           <td><img class="catalog-item-thumb" src="img/product-thumb-2-min.png" width="33" height="33" alt="Продукт в корзине"></td>
           <td>Клубничный пломбир с присыпкой из белого шоколада</td>
           <td>1,5 кг &times;</td>
