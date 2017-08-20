@@ -32,7 +32,6 @@
                 <p class="site-search-filed">
                   <label class="visually-hidden" for="search-field">Поиск</label>
                   <input type="search" name="search" id="search-field" placeholder="Что ищем?">
-                  <input type="submit" class="visually-hidden">
                 </p>
               </form>
             </div>
@@ -44,7 +43,7 @@
               <h2 class="visually-hidden">Авторизация</h2>
               <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p>
-                  <label class="visually-hidden" for="login">Логин</label>
+                  <label class="visually-hidden" for="login">Электронная почта</label>
                   <input type="email" name="e-mail" id="login" placeholder="Электронная почта">
                 </p>
                 <p>
@@ -151,7 +150,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="visually-hidden" for="e-mail">E-mail</label>
-            <input type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
+            <input type="email" name="e-mail" id="e-mail" placeholder="Электронная почта" required>
           </p>
           <button class="button" type="submit">Отправить</button>
         </form>
@@ -194,20 +193,20 @@
          </div>
     </footer>
     <section class="modal contact-form">
+        <button class="modal-close">&times;</button>
         <h2>Мы обязательно ответим!</h2>
           <form class="contact-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
              <label class="visually-hidden" for="name">Имя</label>
-             <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+             <input type="text" name="name" id="name" placeholder="Как вас зовут?" required>
             </p>
             <p>
              <label class="visually-hidden" for="contact-e-mail">E-mail</label>
-             <input type="email" name="e-mail" id="contact-e-mail" placeholder="Ваша почта для ответа?">
+             <input type="email" name="e-mail" id="contact-e-mail" placeholder="Ваша почта для ответа?" required>
             </p>
             <label class="visually-hidden" for="comment">Комментарий</label>
-            <textarea id="comment" name="textarea" rows="4">Напишите что-нибудь &hellip;</textarea>
+            <textarea id="comment" name="textarea" rows="4" required>Напишите что-нибудь &hellip;</textarea>
             <button class="button" type="submit">Отправить</button>
-            <button class="modal-close">&times;</button>
           </form>
     </section>
   </body>
