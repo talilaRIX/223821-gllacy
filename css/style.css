@@ -1,8 +1,186 @@
 body {
+  margin: 0;
+  padding: 0;
+
 	color: #323232;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.38;
+
+  background-color: #859e90;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+/*
+  a:hover,
+  a:focus {
+  color: #e84d37;
+  }
+  Почему, когда это правило стоит здесь, то ссылки не работают, как сказано? Но, если я поставлю это правило в конец - работают?
+*/
+
+.button {
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  padding: 10px 30px;
+  vertical-align: middle;
+  color: #ffffff;
+  border-radius: 40px;
+  background-color: #e94d34;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.button:hover {
+  color:  #ffffff;
+  box-shadow: 0 2px 2px #ac1000;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
+}
+
+.button:focus {
+  color:  #ffffff;
+  box-shadow: inset 0 2px 2px #942718;
+  background-color: rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e1613e 0%, #d74531 100%);
+}
+
+.link-btn {
+  text-align: center;
+  padding: 10px 15px;
+  vertical-align: middle;
+  color: #ffffff; /*Почему не видна надпись "Вход"?*/
+  border-radius: 20px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+
+.link-btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-menu,
+.dropdown,
+.user-menu,
+.slider-list,
+.features ul,
+.main-footer ul,
+.slider-switch,
+.breadcrumbs,
+.filters,
+.pagination-list {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #ffffff;
+}
+
+.main-menu a {
+  text-decoration: underline;
+}
+
+.main-menu-item:hover {
+  width: 87px;
+  height: 32px;
+  background-color: #f7f6f3;
+  border-radius: 20px;
+  color: #333333;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.main-menu-item:focus {
+  width: 87px;
+  height: 32px;
+  background-color: #f7f6f3;
+  border-radius: 20px;
+  color: #333333;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 15px;
+  box-shadow: inset 0 2px 1px #696969;
+}
+
+.main-menu-current {
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #d07058;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.dropdown a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.dropdown li:hover {
+  background-color: #fbded7;
+}
+
+.dropdown li:focuse {
+  background-color: #f6b5a5;
+}
+
+.dropdown li:active {
+  background-color: #d07058;
+}
+
+.index-top-right {
+  color: #ffffff;
+}
+
+.contact-phone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.09;
+}
+
+.slider-list {
+  text-align: center;
+}
+
+.slider .button {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.38;
+}
+
+.promo-banner {
+  color: #ffffff;
+  width: 560px;
+  height: 229px;
+  border-radius: 20px;
+  background-color: #f8f5f2;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.promo-banner.raspberry {
+  background-image: url(../img/rasberry-background.jpg);
+}
+
+.promo-banner.chocolate {
+  background-image: url(../img/choco-background.png);
 }
 
 .title-promo {
@@ -22,9 +200,312 @@ body {
   line-height: 1.25;
 }
 
-.title-catalog-item {
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.38;
+.blog-news a {
+  color: #323232;
+  text-decoration: underline;
 }
 
+.catalog-item {
+  color: #ffffff;
+  text-align: center;
+}
+
+/*
+  .catalog-item:hover {
+  width: 220px;
+  height: 366px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  }
+*/
+
+.title-catalog-item {
+  text-decoration: underline;
+}
+
+.catalog-item span {
+  font-size: 35px;
+  line-height: 1;
+}
+
+.features {
+  background-color: #f1e6cf;
+  background-image: url(../img/waffel-back.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+  border-radius: 20px;
+}
+
+.blog-news-alt {
+  /* Почему-то когда задавала стили для section, то все "плыло".
+    Попробовала обернуть в div.
+    Xтобы распознать, назвала как sectionname-alt (alternative).
+  C div все получилось. А с section - нет. Почему?  */
+  width: 560px;
+  height: 220px;
+  background-color: #ffffff;
+  background-image: url(../img/strawberry-background.jpg);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.subscribe-alt {
+  /* Почему-то когда задавала стили для section, то все "плыло".
+    Попробовала обернуть в div.
+    Xтобы распознать, назвала как sectionname-alt (alternative).
+  C div все получилось. А с section - нет. Почему?  */
+  width: 560px;
+  height: 220px;
+  background-color: #f9f7f5;
+  border-image-source: url(../img/envelope.png);
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.subscribe input {
+  font: inherit;
+  width: 368px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+}
+
+.contacts-map {
+  width: 1200px;
+  height: 429px;
+  background-image: url(../img/map-min.jpg);
+}
+
+.contacts-map .contacts {
+  width: 302px;
+  height: 305px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  /* Почему бекграунд не появляется? */
+}
+
+.main-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-footer {
+  color: #ffffff;
+}
+
+.modal {
+  width: 477px;
+  height: 442px;
+  border-radius: 10px 9px 9px 10px;
+  background-color: #f8f7f4;
+}
+
+.modal input {
+  font: inherit;
+  width: 267px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid #d4d3d2;
+  background-color: #ffffff;
+}
+
+.modal input:hover,
+.subscribe input:hover,
+.search input:hover,
+.enter input:hover {
+  border: 2px solid #d4d3d2;
+}
+
+.modal input:focus,
+.subscribe input:focus,
+.search input:focus,
+.enter input:focus {
+  border: 2px solid #8dbdec;
+  /* Как сделать, чтобы плейсхолдер показался над полем формы? */
+}
+
+.modal input:active,
+.subscribe input:active,
+.search input:active,
+.enter input:active {
+  color: #3d3d3d;
+  font-size: 700;
+  border: 1px solid #d4d3d2;
+  /* Как сделать, чтобы плейсхолдер показался над полем формы? */
+}
+
+.modal textarea {
+  font: inherit;
+}
+
+.modal textarea:hover {
+  border: 2px solid #d4d3d2;
+}
+
+.modal textarea:focus {
+  border: 2px solid #8dbdec;
+  /* Как сделать, чтобы плейсхолдер показался над полем формы? */
+}
+
+.modal textarea:active {
+  color: #3d3d3d;
+  font-size: 700;
+  border: 1px solid #d4d3d2;
+  /* Как сделать, чтобы плейсхолдер показался над полем формы? */
+}
+
+
+.search {
+  width: 341px;
+  height: 84px;
+  background-color: #f9f7f5;
+  border-radius: 10px;
+}
+
+.search input {
+  font: inherit;
+  width: 311px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #a7a7a7;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 15px;
+}
+
+.enter {
+  width: 277px;
+  height: 214px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  /* Окно получилось почему-то маленькое. Не помещаются кнопки. Хотя размеры окна брала из Avocode*/
+}
+
+.enter a {
+  color: #323232;
+  text-decoration: underline;
+}
+
+.enter input {
+  font: inherit;
+  width: 241px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-left: 19px;
+  margin-right: 17px;
+}
+
+.dropdown {
+  width: 143px;
+  height: 171px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  background-color: #f8f7f4;
+}
+
+.breadcrumbs a {
+  color:  #ffffff;
+  text-decoration: underline;
+  }
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: #e84d37;
+}
+
+.breadcrumbs-current {
+  color: #ffffff;
+}
+
+.filters fieldset {
+  border: none;
+ }
+
+.filters legend {
+  color: #ffffff;
+  }
+
+.filter-input + label {
+  color: rgba(255, 255, 255, 0.7);
+    }
+
+.filter-input:hover + label {
+  color:  #ffffff;
+ }
+
+.filter-input:disabled + label {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.sorting-list {
+  font: inherit;
+  width: 193px;
+height: 36px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+    /* Не получается!!! */
+  }
+
+
+.price-range input {
+  font: inherit;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+    /* Не получается!!! */
+  }
+
+.filter-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  padding: 10px 30px;
+  vertical-align: middle;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  border: 2px solid #ffffff;
+}
+
+.filter-button:hover {
+  color: #000000;
+  background-color: #ffffff;
+  }
+
+.filter-button:focus {
+  color: #000000;
+  box-shadow: inset 0 2px 1px #696969;
+background-color: #ededed;
+  }
+
+.pagination-item a {
+  color: #ffffff;
+}
+
+.pagination-item a:hover {
+   background-color: rgba(255, 255, 255, 0.4);
+   /* И здесь конфликт со стилем ссылки при наведении. Не могу решить */
+  }
+
+.pagination-item a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.modal.modal-cart {
+  width: 540px;
+height: 242px;
+  }
+
+a:hover,
+a:focus {
+  color: #e84d37;
+}
