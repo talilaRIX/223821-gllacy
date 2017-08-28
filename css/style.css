@@ -171,6 +171,7 @@ a:focus {
 .title-secondary {
 	font-size: 24px;
 	line-height: 1.25;
+	font-weight: bold;
 }
 
 .slider-list {
@@ -181,6 +182,7 @@ a:focus {
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 1.38;
+	padding: 16px 40px;
 }
 
 
@@ -213,10 +215,23 @@ a:focus {
 }
 
 .features {
+	width: 1091px;
+	height: 306px;
+	margin-bottom: 40px;
+	padding: 0 35px 0 20px;
+	outline: 1px solid blue;
 	color: #323232;
-	background-image: url("../img/waffel-back.jpg");
-	background-color: #f1e6cf 0 0 no-repeat;
+	background: url("../img/waffel-back.jpg")  0 0 no-repeat;
+	background-color: #f1e6cf;
 	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.features ul {
+	margin: 0;
+	padding: 0;
 }
 
 .blog-news-alt {
@@ -245,17 +260,35 @@ a:focus {
 }
 
 .contacts-map {
-	height: 409px;
-	background-image: url("../img/map-min.jpg");
+	height: 430px;
+	background: url("../img/map-min.jpg") center repeat;
+	position: relative;
+}
+
+.contacts p {
+	font-size: 14px;
+	line-height: 1.43;
+}
+
+.contact-details {
+	font-size: 18px;
+	line-height: 1.33;
+	font-weight: bold;
 }
 
 .contacts-map .contacts {
 	color: #323232;
-	width: 302px;
-	height: 305px;
+	width: 252px;
+	height: 269px;
+	padding: 18px 25px;
 	border-radius: 15px;
 	background-color: #ffffff;
+	position: absolute;
+	bottom: 62px;
+	right: 254px;
 }
+
+
 
 .modal {
 	color: #323232;
@@ -295,7 +328,7 @@ a:focus {
 .search input:hover,
 .enter input:hover,
 .modal textarea:hover {
-	border: 2px solid #d4d3d2;
+	outline: 2px solid #d4d3d2;
 }
 
 .modal input:focus,
@@ -303,7 +336,7 @@ a:focus {
 .search input:focus,
 .enter input:focus,
 .modal textarea:focus {
-	border: 2px solid #8dbdec;
+	outline: 2px solid #8dbdec;
 }
 
 .modal input:active,
@@ -313,7 +346,7 @@ a:focus {
 .modal textarea:active {
 	color: #3d3d3d;
 	font-size: 700;
-	border: 1px solid #d4d3d2;
+	outline: 1px solid #d4d3d2;
 }
 
 .enter a {
@@ -466,7 +499,7 @@ float: right;
 	width: 560px;
 	margin: 0;
 	padding: 0;
-}
+	}
 
 .catalog-hits {
 	display: flex;
@@ -486,24 +519,6 @@ float: right;
 	margin-bottom: 40px;
 }
 
-.features {
-	margin: 0;
-	padding: 0;
-	width: 1106px;
-	padding: 10px 20px;
-	margin-bottom: 40px;
-	outline: 1px solid blue;
-}
-
-.features ul {
-	margin: 0;
-	padding: 0;
-}
-
-.features li {
-	display: block;
-}
-
 .index-columns {
 	display: flex;
 	justify-content: space-between;
@@ -511,21 +526,22 @@ float: right;
 }
 
 .blog-news-alt {
-	width: 560px;
+	width: 279px;
+	padding-left: 19px;
+	padding-right: 262px;
+	}
+
+.subscribe p {
+margin: 0;
+padding: 0;
 }
 
 .subscribe-alt {
-	width: 560px;
-}
-
-.contacts-map {
-	display: flex;
-	justify-content: flex-end;
-	outline: 1px solid purple;
-}
-
-.contacts {
-	margin-top: 40px;
+	width: 475px;
+	height: 143px;
+	padding: 32px 54px 35px 21px;
+	border-image-source: url("../img/envelope.png");
+	border-image-width: 5px;
 	}
 
 .pagination-list {
@@ -545,7 +561,7 @@ font-size: 13px;
 	display: flex;
 	padding: 30px;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: flex-start;
 	}
 
 .footer-social {
@@ -589,7 +605,7 @@ font-size: 13px;
 
 .filters-wrapper {
 		width: 860px;
-		min-height: 131px;
+		height: 131px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -605,7 +621,7 @@ font-size: 13px;
 .sorting-filter {
 	width: 193px;
 	height: 56px;
-	margin-bottom: 18px;
+		margin-bottom: 18px;
 }
 
 .price-filter {
@@ -617,7 +633,7 @@ font-size: 13px;
 .fat-filter {
 	width: 415px;
 	height: 56px;
-	margin-bottom: 38px;
+	margin-bottom: 18px;
 }
 
 .sorting select,
@@ -629,11 +645,21 @@ font-size: 13px;
 	list-style: none;
 	background-color: rgba(255, 255, 255, 0.4);
 	border-radius: 40px;
-	padding: 10px;
+	padding: 5px 10px;
+	color: #ffffff;
+}
+
+.sorting-list option {
+	color:  #000000;
 }
 
 .filling-filter {
 	width: 702px;
 	height: 56px;
 	margin-bottom: 18px;
+}
+
+.clearfix::after {
+    clear: both;
+    display: table;
 }
