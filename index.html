@@ -31,7 +31,7 @@
           <a class="user-menu-btn" href="#">Поиск</a>
           <div class="modal search">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <p class="search-filed">
+              <p class="search-field">
                 <label class="visually-hidden" for="search-field">Поиск</label>
                 <input type="search" name="search" id="search-field" placeholder="Что ищем?">
               </p>
@@ -42,7 +42,8 @@
           <a class="user-menu-btn" href="#">Вход</a>
           <div class="modal enter">
             <h2 class="visually-hidden">Авторизация</h2>
-            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="enter-wrapper">
+            <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
               <p>
                 <label class="visually-hidden" for="login">Электронная почта</label>
                 <input type="email" name="e-mail" id="login" placeholder="Электронная почта">
@@ -52,9 +53,10 @@
                 <input type="password" name="password" id="password" placeholder="Пароль">
               </p>
               <button class="button" type="submit">Войти</button>
-              <a class="login-form" href="#">Забыли пароль?</a>
-              <a class="login-form" href="#">Новая регистрация</a>
-            </form>
+              </form>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>
           </div>
         </li>
 
@@ -154,7 +156,7 @@
       <h3 class="title-secondary">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="features-factors">
         <li class="features-factor">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-        <li class="features-factor">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговремееное сотрудничество.</li>
+        <li class="features-factor">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
         <li class="features-factor">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и до бавки произведены из натурального, экологически чистого сырья.</li>
         <li class="features-factor">Доставка нашего мороженого до заказчиков осуществаляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
       </ul>
@@ -219,8 +221,8 @@
       </footer>
       <section class="modal contact-form">
         <button class="modal-close">&times;</button>
-        <h2>Мы обязательно ответим!</h2>
-        <form class="contact-form" action="https://echo.htmlacademy.ru/" method="post">
+                <h2>Мы обязательно вам ответим!</h2>
+        <form class="contact-form form" action="https://echo.htmlacademy.ru/" method="post">
           <p>
             <label class="visually-hidden" for="name">Имя</label>
             <input type="text" name="name" id="name" placeholder="Как вас зовут?" required>
