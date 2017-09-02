@@ -807,13 +807,14 @@ input[type="checkbox"]:disabled + label {
 		cursor: not-allowed;
 	}
 
+
 .filter-radio,
 .filter-checkbox {
 	position: relative;
 	padding-left: 35px;
 }
 
-.filter-radio::before {
+input[type="radio"] + label::before {
 	content: "";
 	position: absolute;
 	top: -3px;
@@ -821,14 +822,19 @@ input[type="checkbox"]:disabled + label {
 	width: 25px;
 	height: 25px;
 	background: url("../img/radio-off.svg") 0 0 no-repeat;
-	opacity: 0.7;
 }
 
-.filter-radio:checked::before {
+input[type="radio"]:checked + label::before {
+	content: "";
+	position: absolute;
+	top: -3px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
 	background: url("../img/radio-on.svg") 0 0 no-repeat;
 }
 
-.filter-checkbox::before {
+input[type="checkbox"] + label::before {
 	content: "";
 	position: absolute;
 	top: -3px;
@@ -836,16 +842,15 @@ input[type="checkbox"]:disabled + label {
 	width: 25px;
 	height: 25px;
 	background: url("../img/checkbox-off.svg") 0 0 no-repeat;
-	opacity: 0.7;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked + label::before {
 	background: url("../img/checkbox-on.svg") 0 0 no-repeat;
 }
 
 	.filter-button {
 		display: block;
-		width: auto;
+		width: 145px;
 		height: 40px;
 		font-family: inherit;
 		font-size: 16px;
@@ -857,6 +862,10 @@ input[type="checkbox"]:checked {
 		background-color: rgba(255, 255, 255, 0.4);
 		border-radius: 40px;
 		border: 2px solid #ffffff;
+		position: absolute;
+		bottom: 30px;
+		right: 15px;
+
 
 	}
 
@@ -870,41 +879,86 @@ input[type="checkbox"]:checked {
 		background-color: #ededed;
 	}
 
-	.pagination-item a {
-		text-decoration: none;
-		padding: 10px 15px;
-		border-radius: 50%;
+
+	.pagination-list {
+		padding-left: 0;
+		font-size: 0;
+		text-align: right;
+		margin-top: 0;
+	}
+
+	.pagination-item {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 100%;
 		margin-right: 5px;
 	}
 
-	.pagination-item a:hover {
+	.pagination-link {
+		position: relative;
+	  display: block;
+	  width: 25px;
+	  height: 25px;
+	  border-radius: 50%;
+	  font-size: 16px;
+	  font-weight: 500;
+	  line-height: 25px;
+	  text-align: center;
+	  text-decoration: none;
+		padding: 10px 10px;
+	  color: inherit;
+	}
+
+	.pagination-link:not(.inactive):not(.current):hover {
 		color: #ffffff;
-		background-color: rgba(255, 255, 255, 0.4);
+	  background-color: rgba(255, 255, 255, 0.2);
 	}
 
-	.pagination-item a:focus {
-		color: #000000;
-		background-color: #ffffff;
+	.pagination-link.current {
+	    color: #323232;
+	    background-color: white;
 	}
 
-.start {
- 	box-sizing: content-box;
- 	display: block;
- 	width: 20px;
-   height: 20px;
- 	text-indent: -9999px;
- 	background: url("../img/icon-right-small.svg") 0 0 no-repeat;
-	transform: rotate(180deg)
- }
+	.pagination-link.current:hover {
+	    color:  #000000;
+	 }
 
- .finish {
-	box-sizing: content-box;
-	display: block;
-	width: 20px;
-  height: 20px;
-	text-indent: -9999px;
-	background: url("../img/icon-right-small.svg") 0 0 no-repeat;
-}
+	.pagination-link.current {
+	    color: #323232;
+	    background-color: white;
+	}
+
+	.pagination-link.inactive {
+	    opacity: .2;
+	}
+
+	.pagination-item:first-child .pagination-link,
+	.pagination-item:last-child .pagination-link {
+	  text-indent: -9999px;
+	}
+
+	.pagination-item:first-child .pagination-link::after,
+	.pagination-item:last-child .pagination-link::after {
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    bottom: 0;
+	    margin: auto;
+	    content: "";
+	    width: 9px;
+	    height: 9px;
+	    border-bottom: 2px solid currentColor;
+	    border-left: 2px solid currentColor;
+	}
+
+	.pagination-item:first-child .pagination-link::after {
+	  transform: rotate(45deg);
+	}
+
+	.pagination-item:last-child .pagination-link::after {
+	  transform: rotate(-135deg);
+	}
 
 .main-navigation {
 		display: flex;
@@ -1004,17 +1058,6 @@ input[type="checkbox"]:checked {
 	margin-bottom: 40px;
 	min-height: 220px;
 	outline: 1px solid orange;
-}
-
-.pagination-list {
-	margin: 0;
-	padding: 0;
-	float: right;
-	margin-bottom: 36px;
-}
-
-.pagination-list li {
-	display: inline-block;
 }
 
 .main-footer {
