@@ -36,9 +36,9 @@
               </a>
               <div class="modal search">
                 <form action="https://echo.htmlacademy.ru" method="get">
-                  <p class="search-field">
-                    <label class="visually-hidden" for="search-field">Поиск</label>
-                    <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+                  <p class="input-wrapper">
+                    <label for="search-field">Что ищем?</label>
+                    <input type="search" name="search" id="search-field">
                   </p>
                 </form>
               </div>
@@ -48,13 +48,13 @@
               <div class="modal enter">
                 <h2 class="visually-hidden">Авторизация</h2>
                 <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <p>
-                    <label class="visually-hidden" for="login">Электронная почта</label>
-                    <input type="email" name="e-mail" id="login" placeholder="Электронная почта">
+                  <p class="input-wrapper">
+                    <label for="login">Электронная почта</label>
+                    <input type="email" name="e-mail" id="login">
                   </p>
-                  <p>
-                    <label class="visually-hidden" for="password">Пароль</label>
-                    <input type="password" name="password" id="password" placeholder="Пароль">
+                  <p class="input-wrapper">
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" id="password">
                   </p>
                   <button class="button" type="submit">Войти</button>
                 </form>
@@ -166,10 +166,10 @@
               <h2 class="visually-hidden">Подписка на новости и предложения</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p>
-                  <label class="visually-hidden" for="e-mail">E-mail</label>
-                  <input type="email" name="e-mail" id="e-mail" placeholder="Электронная почта" required>
-                </p>
+                <div class="input-wrapper">
+                  <label for="e-mail">Электронная почта</label>
+                  <input type="email" name="e-mail" id="e-mail" required>
+                </div>
                   <button class="button" type="submit">Отправить</button>
               </form>
 
@@ -219,16 +219,18 @@
     <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
     <h2>Мы обязательно вам ответим!</h2>
     <form class="contact-form form" action="https://echo.htmlacademy.ru/" method="post">
-      <p>
-        <label class="visually-hidden" for="name">Имя</label>
-        <input type="text" name="name" id="name" placeholder="Как вас зовут?" required>
+      <p class="input-wrapper">
+        <label  for="name">Как вас зовут?</label>
+        <input type="text" name="name" id="name" required>
       </p>
-      <p>
-        <label class="visually-hidden" for="contact-e-mail">E-mail</label>
-        <input type="email" name="e-mail" id="contact-e-mail" placeholder="Ваша почта для ответа?" required>
+      <p class="input-wrapper">
+        <label for="contact-e-mail">Ваша почта для ответа?</label>
+        <input type="email" name="e-mail" id="contact-e-mail" required>
       </p>
-      <label class="visually-hidden" for="comment">Комментарий</label>
-      <textarea id="comment" name="textarea" rows="6" cols="50" placeholder="Напишите что-нибудь&hellip;" required></textarea>
+      <div class="input-wrapper">
+        <label for="comment">Напишите что-нибудь&hellip;</label>
+        <textarea id="comment" name="textarea" rows="6" cols="50" required></textarea>
+      </div>
       <button class="button" type="submit">Отправить</button>
     </form>
   </section>
