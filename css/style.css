@@ -382,12 +382,23 @@ a:not(.button, .main-menu, .dropdown):focus {
 	line-height: 1;
 }
 
+.title-banner {
+	font-size: 35px;
+	line-height: 1.17;
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+
 .title-main {
 	font-size: 35px;
 	line-height: 1.17;
 	margin: 0;
 	padding-top: 5px;
+	padding-left: 5px;
 }
+
+
 
 .title-secondary {
 	font-size: 24px;
@@ -468,7 +479,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 
 .promo-banner {
 	width: 560px;
-	padding-top: 10px;
+	padding-top: 15px;
 	padding-left: 15px;
 	padding-right: 20px;
 
@@ -480,9 +491,9 @@ a:not(.button, .main-menu, .dropdown):focus {
 .promo-banner p {
 	font-size: 18px;
 	margin: 0;
-	padding-top: 3px;
+	padding-top: 15px;
 	padding-left: 6px;
-	padding-bottom: 45px;
+	padding-bottom: 40px;
 }
 
 .promo-banner .button {
@@ -532,7 +543,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 
 .features-factor {
 	width: 540px;
-	padding-top: 5px;
+	padding-top: 10px;
 	padding-left: 58px;
 	margin-bottom: 15px;
 	margin-right: 3px;
@@ -548,7 +559,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 .f1::before {
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: -4px;
 	left: 0;
 	width: 50px;
 	height: 50px;
@@ -558,7 +569,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 .f2::before {
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: -4px;
 	left: 0;
 	width: 50px;
 	height: 50px;
@@ -568,7 +579,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 .f3::before {
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: -4px;
 	left: 0;
 	width: 50px;
 	height: 50px;
@@ -578,7 +589,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 .f4::before {
 	content: "";
 	position: absolute;
-	top: -7px;
+	top: -4px;
 	left: 0;
 	width: 50px;
 	height: 50px;
@@ -600,7 +611,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 
 .blog-news-alt p {
 	margin: 0;
-	padding-bottom: 3px;
+	padding-bottom: 10px;
 }
 
 .blog-news a {
@@ -711,7 +722,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 	background-color: #ffffff;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
 	position: absolute;
-	top: 60px;
+	top: 65px;
 	right: 27px;
 	z-index: 2;
 }
@@ -1107,7 +1118,7 @@ input[type="checkbox"]:checked + label::before {
 .catalog-hits {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 20px;
+
 }
 
 .catalog {
@@ -1176,7 +1187,7 @@ input[type="checkbox"]:checked + label::before {
 .index-columns {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	min-height: 220px;
 	outline: 1px solid orange;
 }
