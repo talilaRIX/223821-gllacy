@@ -24,7 +24,6 @@ img {
 }
 
 .site-wrapper {
-	min-width: 1200px;
 	background-color: #849d8f;
 	background: url("../img/back-1.png") top center no-repeat;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
@@ -49,7 +48,6 @@ img {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 10px 27px;
-	outline: 1px solid red;
 	position: relative;
 }
 
@@ -87,11 +85,7 @@ a {
 	color: #ffffff;
 }
 
-a:not(.button, .main-menu, .dropdown):hover,
-a:not(.button, .main-menu, .dropdown):focus {
-	color: #e84d37;
-}
-
+.main-menu a,
 .breadcrumbs a,
 .title-catalog-item,
 .details-link  {
@@ -99,6 +93,23 @@ a:not(.button, .main-menu, .dropdown):focus {
 	background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)) no-repeat 0 100%;
 	background-size: 100% 1px;
 }
+
+.breadcrumbs a:hover,
+.title-catalog-item:hover,
+.details-link:hover {
+	color: #f58669;
+	background: linear-gradient(#f58669, #ec6e5d) no-repeat 0 100%;
+	background-size: 100% 1px;
+}
+
+.breadcrumbs a:focus,
+.title-catalog-item:focus,
+.details-link:focus {
+	color: #f58669;
+	background: linear-gradient(#f58669, #ec6e5d) no-repeat 0 100%;
+	background-size: 100% 1px;
+}
+
 
 .button {
 	display: inline-block;
@@ -175,6 +186,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 .main-menu > li {
 	position: relative;
 	padding: 10px 0;
+	margin-right: 5px;
 }
 
 .main-menu > li:hover .dropdown {
@@ -228,8 +240,9 @@ a:not(.button, .main-menu, .dropdown):focus {
 	box-shadow: inset 0 2px 1px #696969;
 }
 
-.current {
-	background-color: #d07058;
+.main-menu .current {
+	background: #d07058;
+
 }
 
 .current-page {
@@ -266,6 +279,60 @@ a:not(.button, .main-menu, .dropdown):focus {
 	display: block;
 }
 
+.modal {
+	color: #323232;
+	border-radius: 10px;
+	background-color: #f8f7f4;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.input-wrapper {
+	position: relative;
+	padding: 15px 0;
+	margin: 0;
+}
+
+.input-wrapper label {
+	position: absolute;
+	left: 15px;
+	top: 30px;
+	font-size: 14px;
+	color: #999;
+}
+
+.input-wrapper input,
+.input-wrapper textarea {
+	padding: 14px 15px 16px;
+	border-radius: 4px;
+	border: 1px solid #d3d3d2;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #323232;
+}
+
+.input-wrapper input:hover,
+.input-wrapper textarea:hover {
+	border: 2px solid #d3d3d2;
+}
+
+.input-wrapper input:focus + label,
+.input-wrapper textarea:focus + label {
+  top: -.4em;
+  font-size: 11px;
+  line-height: 1.18;
+}
+
+.input-wrapper input:focus + label,
+.input-wrapper textarea:focus + label {
+  color: #5b9ddf;
+}
+
+.input-wrapper input:focus,
+.input-wrapper textarea:focus {
+  outline-color: #5b9ddf;
+}
+
 .search {
 	width: 345px;
 	padding: 20px 15px;
@@ -284,6 +351,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 
 .search input {
 	width: 100%;
+	height: 45px;
 }
 
 .enter {
@@ -321,6 +389,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 
 .enter input {
 	width: 100%;
+	height: 43px;
 }
 
 .enter .button {
@@ -516,7 +585,6 @@ a:not(.button, .main-menu, .dropdown):focus {
 	min-height: 308px;
 	margin-bottom: 40px;
 	padding: 25px 20px 0 20px;
-	outline: 1px solid blue;
 	color: #323232;
 	font-size: 16px;
 	background: url("../img/waffel-cut.png")  0 0 repeat;
@@ -538,7 +606,6 @@ a:not(.button, .main-menu, .dropdown):focus {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	outline: 1px solid yellow;
 }
 
 .features-factor {
@@ -602,7 +669,6 @@ a:not(.button, .main-menu, .dropdown):focus {
 	background: url("../img/strawberry-background.jpg") 63% 50% no-repeat;
 	background-color: #ffffff;
 	border-radius: 20px;
-	outline: 1px solid yellow;
 	padding-top: 20px;
 	padding-left: 20px;
 	padding-right: 230px;
@@ -648,46 +714,9 @@ a:not(.button, .main-menu, .dropdown):focus {
 	margin-top: 20px;
 }
 
-.input-wrapper {
-	position: relative;
-	padding: 15px 0;
-}
-
-.subscribe-alt  .input-wrapper input {
-	width: 360px;
+.subscribe-alt input {
+	width: 367px;
 	height: 45px;
-	padding-left: 10px;
-	border-radius: 5px;
-	border: 1px solid gray;
-	margin-right: 10px;
-}
-
-.input-wrapper label {
-	position: absolute;
-	left: 15px;
-	top: 30px;
-	font-size: 14px;
-	opacity: .5;
-}
-
-.input-wrapper input:hover + label {
-	border-color: #d4d3d2;
-}
-
-.input-wrapper input:focus + label {
-	top: -20px;
-	font-size: 11px;
-	opacity: 1;
-	color: #8dbdec;
-	border-color: #8dbdec;
-}
-
-.input-wrapper input:active + label  {
-	top: -20px;
-	font-size: 11px;
-	color: #3d3d3d;
-	font-weight: 700;
-	border-color: #d4d3d2;
 }
 
 .subscribe-alt .button {
@@ -699,7 +728,6 @@ a:not(.button, .main-menu, .dropdown):focus {
 .map {
 	position: relative;
 	min-height: 430px;
-	outline: 1px solid black;
 }
 
 .map img {
@@ -751,11 +779,19 @@ a:not(.button, .main-menu, .dropdown):focus {
 	width: 100%;
 }
 
-.modal {
-	color: #323232;
-	border-radius: 10px;
-	background-color: #f8f7f4;
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+.feedback-wrapper {
+	position: fixed;
+  display: none;
+	top: 120px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+	z-index: 5;
+}
+
+.feedback-show {
+	display: block;
 }
 
 .feedback {
@@ -764,7 +800,7 @@ a:not(.button, .main-menu, .dropdown):focus {
 	position: absolute;
 }
 
-.feadback h2 {
+.feedback h2 {
 	margin: 0;
 	padding: 0;
 }
@@ -787,16 +823,20 @@ a:not(.button, .main-menu, .dropdown):focus {
 }
 
 .contact-form input {
-	width: 265px;
+	width: 267px;
+	height: 45px;
 }
 
 .contact-form textarea {
-	width: 427px;
-	margin-bottom: 20px;
+	width: 430px;
+	resize: none;
+	font-family: inherit;
+	margin-bottom: 10px;
 }
 
 .feedback button {
 	float: right;
+	margin-bottom: 10px;
 }
 
 .modal-cart {
@@ -988,10 +1028,10 @@ input[type="checkbox"]:checked + label::before {
 	padding: 8px 20px;
 	vertical-align: middle;
 	color: #ffffff;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 40px;
 	border: 2px solid #ffffff;
-	margin-top: 24px;
+	margin-top: 20px;
 }
 
 .filter-button:hover {
@@ -1086,7 +1126,6 @@ input[type="checkbox"]:checked + label::before {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	outline: 1px solid green;
 	line-height: 1.13;
 }
 
@@ -1189,7 +1228,6 @@ input[type="checkbox"]:checked + label::before {
 	justify-content: space-between;
 	margin-bottom: 30px;
 	min-height: 220px;
-	outline: 1px solid orange;
 }
 
 .main-footer {
@@ -1208,7 +1246,6 @@ input[type="checkbox"]:checked + label::before {
 	width: 200px;
 	min-height: 45px;
 	margin-top: 25px;
-	outline: 1px solid yellow;
 	display: flex;
 	justify-content: space-between;
 	align-items: baseline;
@@ -1258,11 +1295,28 @@ input[type="checkbox"]:checked + label::before {
 .breadcrumbs {
 	padding-top: 4px;
 	font-size: 15px;
+	padding-left: 10px;
 }
 
 .breadcrumbs li {
 	display: inline-block;
-	padding-right: 10px;
+	padding-right: 20px;
+}
+
+.breadcrumbs-path {
+	position: relative;
+
+}
+
+.breadcrumbs-path::after {
+	content: "";
+	position: absolute;
+	bottom: 4px;
+	left: 65px;
+	width: 8px;
+	height: 8px;
+	background: url(../img/arrow-31-8.png) 0 0 no-repeat;
+	fill: #fff;
 }
 
 .filters-wrapper {
@@ -1271,7 +1325,6 @@ input[type="checkbox"]:checked + label::before {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	outline: 1px solid yellow;
 	position: relative;
 	margin-top: 26px;
 	margin-bottom: 26px;
@@ -1336,7 +1389,7 @@ input[type="checkbox"]:checked + label::before {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.3);
 	border-radius: 40px;
 	padding: 7px 10px;
 }
@@ -1358,8 +1411,8 @@ input[type="checkbox"]:checked + label::before {
 	bottom: 0;
 	margin-top: auto;
 	margin-bottom: auto;
-	width: 13px;
-	height: 10px;
+	width: 12px;
+	height: 12px;
 	background: url("../img/select-arrow.svg") 0 0 no-repeat;
 }
 
@@ -1367,10 +1420,10 @@ input[type="checkbox"]:checked + label::before {
 	color:   #ffffff;
 	width: 100%;
 	padding: 8px 0 8px 15px;
-	border: 1px solid #ccc;
+	border: 1px solid transparent;
 	border-radius: 40px;
 	font-size: inherit;
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.3);
 	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
