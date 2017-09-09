@@ -1,6 +1,7 @@
 var link = document.querySelector(".contacts-button");
-var popup = document.querySelector(".feedback-wrapper");
+var popup = document.querySelector(".feedback");
 var close = popup.querySelector(".modal-close");
+
 
 
 link.addEventListener("click", function (evt) {
@@ -15,7 +16,7 @@ close.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
  if (evt.keyCode === 27) {
-	if (popup.classList.contains("modal-show")) {
+	if (popup.classList.contains("feedback-show")) {
 	popup.classList.remove("feedback-show");
 	}
  }
