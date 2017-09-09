@@ -799,11 +799,10 @@ a {
 
 .feedback-wrapper {
 	position: fixed;
-	display: none;
 }
 
-.feedback-show {
-	display: block;
+.hidden {
+	display: none;
 }
 
 .feedback {
@@ -1331,7 +1330,6 @@ input[type="checkbox"]:checked + label::before {
 	width: 8px;
 	height: 8px;
 	background: url(../img/arrow-31-8.png) 0 0 no-repeat;
-	fill: #fff;
 }
 
 .filters-wrapper {
