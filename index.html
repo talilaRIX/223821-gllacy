@@ -15,12 +15,12 @@
     <header class="main-header container">
       <nav class="main-navigation">
         <div class="main-header-logo">
-          <img src="img/logo-1.png" width="154" height="64" alt="Логотип Глейси">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
         </div>
         <ul class="main-menu">
           <li><a class="main-menu-link" href="#">Каталог</a>
             <ul class="dropdown">
-              <li><a href="#"><b>Новинки</b></a></li>
+              <li class="new"><a href="#"><b>Новинки</b></a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
@@ -56,9 +56,11 @@
                   <label for="password">Пароль</label>
                 </p>
                 <button class="button" type="submit">Войти</button>
+                <div class="enter-links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
               </form>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
             </div>
           </li>
           <li class="user-menu-item">
@@ -99,7 +101,7 @@
           <a class="button" href="#">Хочу варенье!</a>
         </div>
         <div class="promo-banner chocolate">
-          <h3 class="title-main">Шоколадки даром!</h3>
+          <h3 class="title-banner">Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ уваковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button" href="#">Хочу шоколадки!</a>
         </div>
@@ -173,65 +175,64 @@
       </div>
     </main>
     <div class="map">
-      <img src="img/map.png" width="1200" height="430" alt="Расположение на карте">
+      <img src="img/map.jpg" width="1200" height="430" alt="Расположение на карте">
       <div class="container">
         <section class="contacts">
-
           <h2 class="visually-hidden">Свяжитесь с нами!</h2>
           <p class="address">Адрес главного офиса и офлайн магазина:</p>
           <p><span class="contact-details">ул.Большая Конюшенная 19/8, Санкт-Петербург</span></p>
           <p>Для заказов по телефону:<p>
-            <p><span class="contact-details phone">8 812 450-25-25</span></p>
-            <p>(с 10 до 20 ежедневно)</p>
-            <a class="button contacts-button" href="#">Форма обратной связи</a>
-          </section>
-       </div>
+          <p><span class="contact-details phone">8 812 450-25-25</span></p>
+          <p>(с 10 до 20 ежедневно)</p>
+          <a class="button contacts-button" href="#">Форма обратной связи</a>
+        </section>
+      </div>
     </div>
     <footer class="main-footer container">
-        <div class="footer-social">
-          <h3 class="visually-hidden">Найдите нас в соцсетях</h3>
-          <ul>
-            <li><a class="button-social twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-            <li><a class="button-social instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li><a class="button-social facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li><a class="button-social vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-          </ul>
-        </div>
-        <div class="company-details">
-          <h3 class="visually-hidden">Подробнее о нашей компании</h3>
-          <ul>
-            <li><a class="details-link featured" href="#">Для поставщиков</a></li>
-            <li><a class="details-link" href="#">Наши документы</a></li>
-            <li><a class="details-link" href="#">О производстве</a></li>
-            <li><a class="details-link" href="#">Экологические стандарты</a></li>
-          </ul>
-        </div>
-        <div class="footer-copyright">
-          <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a>
-            <p>Сделано в <a  class="details-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> &#0169; 2017</p>
-          </div>
-      </footer>
+      <div class="footer-social">
+        <h3 class="visually-hidden">Найдите нас в соцсетях</h3>
+        <ul>
+          <li><a class="button-social twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          <li><a class="button-social instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="button-social facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="button-social vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        </ul>
+      </div>
+      <div class="company-details">
+        <h3 class="visually-hidden">Подробнее о нашей компании</h3>
+        <ul class="col">
+          <li><a class="details-link featured" href="#">Для поставщиков</a></li>
+          <li><a class="details-link" href="#">О производстве</a></li>
+        </ul>
+        <ul class="col">
+          <li><a class="details-link" href="#">Наши документы</a></li>
+          <li><a class="details-link" href="#">Экологические стандарты</a></li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy logo"></a>
+        <p>Сделано в <a  class="details-link" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> &#0169; 2017</p>
+      </div>
+    </footer>
     <section class="modal feedback-wrapper feedback hidden">
-
-        <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
-        <h2>Мы обязательно вам ответим!</h2>
-        <form class="contact-form form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="input-wrapper">
-            <input type="text" name="name" id="name" required>
-            <label  for="name">Как вас зовут?</label>
-          </p>
-          <p class="input-wrapper">
-            <input type="email" name="e-mail" id="contact-e-mail" required>
-            <label for="contact-e-mail">Ваша почта для ответа?</label>
-          </p>
-          <p class="input-wrapper">
-            <textarea id="comment" name="textarea" rows="5" cols="50" required></textarea>
-            <label for="comment">Напишите что-нибудь&hellip;</label>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-
+      <button class="modal-close"><span class="visually-hidden">Закрыть</span></button>
+      <h2>Мы обязательно вам ответим!</h2>
+      <form class="contact-form form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="input-wrapper">
+          <input type="text" name="name" id="name" required>
+          <label  for="name">Как вас зовут?</label>
+        </p>
+        <p class="input-wrapper">
+          <input type="email" name="e-mail" id="contact-e-mail" required>
+          <label for="contact-e-mail">Ваша почта для ответа?</label>
+        </p>
+        <p class="input-wrapper">
+          <textarea id="comment" name="textarea" rows="5" cols="50" required></textarea>
+          <label for="comment">Напишите что-нибудь&hellip;</label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
   </div>
   <script src="js/popup.js"></script>
