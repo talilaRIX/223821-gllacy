@@ -48,11 +48,11 @@
               <h2 class="visually-hidden">Авторизация</h2>
               <form class="enter-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="input-wrapper">
-                  <input type="email" name="e-mail" id="login">
+                  <input type="text" name="e-mail" id="login" required>
                   <label for="login">Электронная почта</label>
                 </p>
                 <p class="input-wrapper">
-                  <input type="password" name="password" id="password">
+                  <input type="text" name="password" id="password" required>
                   <label for="password">Пароль</label>
                 </p>
                 <button class="button" type="submit">Войти</button>
@@ -109,36 +109,36 @@
       <section class="catalog-hits">
         <h2 class="visually-hidden">Хиты продаж</h2>
         <article class="catalog-item">
-          <img src="img/product-1-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          <div class="item-photo">
+            <img src="img/product-1-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </div>
           <h4><a class="title-catalog-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
           <p class="price-item">310 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/product-2-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          <div class="item-photo">
+            <img src="img/product-2-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          </div>
           <h4><a class="title-catalog-item" href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
           <p class="price-item">380 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/product-3-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          <div class="item-photo">
+            <img src="img/product-3-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          </div>
           <h4><a class="title-catalog-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
           <p class="price-item">355 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
         </article>
         <article class="catalog-item">
-          <img src="img/product-4-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          <div class="item-photo">
+            <img src="img/product-4-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+          </div>
           <h4><a class="title-catalog-item" href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
           <p class="price-item">415 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+          <a href="#" class="button button-preview">Быстрый просмотр</a>
         </article>
       </section>
       <section class="features">
@@ -159,19 +159,19 @@
             <a class="title-secondary" href="#">10 способов сервировки фруктовых щербетов к столу</a>
           </section>
         </div>
-        <div class="subscribe-alt">
-          <section class="subscribe">
+        <section class="subscribe-alt">
+          <div class="subscribe">
             <h2 class="visually-hidden">Подписка на новости и предложения</h2>
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <div class="input-wrapper">
-                <input type="email" name="e-mail" id="e-mail" required>
+                <input type="text" name="e-mail" id="e-mail" required>
                 <label for="e-mail">Электронная почта</label>
               </div>
               <button class="button" type="submit">Отправить</button>
             </form>
-          </section>
-        </div>
+          </div>
+        </section>
       </div>
     </main>
     <div class="map">
@@ -184,7 +184,7 @@
           <p>Для заказов по телефону:<p>
           <p><span class="contact-details phone">8 812 450-25-25</span></p>
           <p>(с 10 до 20 ежедневно)</p>
-          <a class="button contacts-button" href="#">Форма обратной связи</a>
+          <a class="button contacts-button" href="feedback-form.html">Форма обратной связи</a>
         </section>
       </div>
     </div>
@@ -224,7 +224,7 @@
           <label  for="name">Как вас зовут?</label>
         </p>
         <p class="input-wrapper">
-          <input type="email" name="e-mail" id="contact-e-mail" required>
+          <input type="text" name="e-mail" id="contact-e-mail" required>
           <label for="contact-e-mail">Ваша почта для ответа?</label>
         </p>
         <p class="input-wrapper">
@@ -235,6 +235,6 @@
       </form>
     </section>
   </div>
-  <script src="js/popup.js"></script>
- </body>
+<script src="js/popup.js"></script>
+</body>
 </html>

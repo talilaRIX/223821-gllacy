@@ -1,10 +1,5 @@
 "use strict";
 
-var link = document.querySelector(".contacts-button");
-var popup = document.querySelector(".feedback");
-var close = popup.querySelector(".modal-close");
-
-
 (function() {
   var modalTrigger = document.querySelector(".contacts-button");
   var modalWrapper = document.querySelector(".feedback-wrapper");
@@ -13,8 +8,8 @@ var close = popup.querySelector(".modal-close");
   if (modalTrigger && modalWrapper) {
     modalTrigger.addEventListener("click", function(evt) {
       evt.preventDefault();
-
       if (modalWrapper.classList.contains("hidden")) {
+        document.body.classList.add("page-overlay");
         modalWrapper.classList.remove("hidden");
       }
     });
@@ -22,6 +17,7 @@ var close = popup.querySelector(".modal-close");
     modalClose.addEventListener("click", function(evt) {
       evt.preventDefault();
       modalWrapper.classList.add("hidden");
+      document.body.classList.remove("page-overlay");
     });
   }
 

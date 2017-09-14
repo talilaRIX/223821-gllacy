@@ -67,7 +67,7 @@
             <table>
               <tr>
                 <td class="remove"><button class="item-remove"><span class="visually-hidden">Удалить</span></button></td>
-                <td class="thumb"><img class="catalog-item-thumb" src="img/product-thumb-1-min.png" width="33" height="33" alt="Продукт в корзине"></td>
+                <td class="thumb"><img class="catalog-item-thumb-1" src="img/product-thumb-1-min.png" width="33" height="33" alt="Продукт в корзине"></td>
                 <td class="item-name">Пломбир с апельсиновым джемом</td>
                 <td class="quantity">1,5кг &times;</td>
                 <td class="price">200 руб.</td>
@@ -75,7 +75,7 @@
               </tr>
               <tr>
                 <td class="remove"><button class="item-remove"><span class="visually-hidden">Удалить</span></button></td>
-                <td class="thumb"><img class="catalog-item-thumb" src="img/product-thumb-2-min.png" width="33" height="33" alt="Продукт в корзине"></td>
+                <td class="thumb"><img class="catalog-item-thumb-2" src="img/product-thumb-2-min.png" width="33" height="33" alt="Продукт в корзине"></td>
                 <td class="item-name">Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td class="quantity">1,5 кг &times;</td>
                 <td class="price">300 руб.</td>
@@ -85,16 +85,14 @@
             <span class="total-cart">Итого 750 руб.</span>
             <a class="button button-cart" href="#">Оформить заказ</a>
           </div>
-        </section>
-      </li>
-    </ul>
-  </nav>
-  <div class="index-top-right">
-    <p>С 10 до 20, ежедневно
-      <span class="contact-phone">8 812 450-25-25</span>
-    </p>
-  </div>
-</header>
+          </section>
+        </li>
+      </ul>
+    </nav>
+    <div class="index-top-right">
+      <p>С 10 до 20, ежедневно<span class="contact-phone">8 812 450-25-25</span></p>
+    </div>
+  </header>
   <main class="container">
     <ul class="breadcrumbs">
       <li><a class="breadcrumbs-path" href="index.html">Главная</a></li>
@@ -115,7 +113,7 @@
                   <option value="cheap-first">сначала недорогие</option>
                   <option value="expensive-first">сначала дорогие</option>
                   <option value="fat-first">по жирности</option>
-                </select>
+              </select>
               </div>
             </fieldset>
           </div>
@@ -129,8 +127,8 @@
                     <label class="visually-hidden" for="price-range">Цена</label>
                   </div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
               </div>
             </fieldset>
           </div>
@@ -156,23 +154,23 @@
           <div class="filling-filter">
             <fieldset>
               <legend>Наполнители:</legend>
-                <ul class="filters">
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input" type="checkbox" name="chocolate" id="chocolate" checked>
-                    <label class="filter-input filter-checkbox" for="chocolate">шоколадные</label></li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input" type="checkbox" name="sugar" id="sugar" checked>
-                    <label class="filter-input filter-checkbox" for="sugar">сахарные присыпки</label></li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input" type="checkbox" name="fruit" id="fruit">
-                    <label class="filter-input filter-checkbox" for="fruit">фрукты</label></li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input" type="checkbox" name="syrup" id="syrup">
-                    <label class="filter-input filter-checkbox" for="syrup">сиропы</label></li>
-                  <li class="filter-option">
-                    <input class="visually-hidden filter-input" type="checkbox" name="jam" id="jam" disabled>
-                    <label class="filter-input filter-checkbox" for="jam">джемы</label></li>
-                </ul>
+              <ul class="filters">
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input" type="checkbox" name="chocolate" id="chocolate" checked>
+                  <label class="filter-input filter-checkbox" for="chocolate">шоколадные</label></li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="filter-input filter-checkbox" for="sugar">сахарные присыпки</label></li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input" type="checkbox" name="fruit" id="fruit">
+                  <label class="filter-input filter-checkbox" for="fruit">фрукты</label></li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input" type="checkbox" name="syrup" id="syrup">
+                  <label class="filter-input filter-checkbox" for="syrup">сиропы</label></li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input" type="checkbox" name="jam" id="jam" disabled>
+                  <label class="filter-input filter-checkbox" for="jam">джемы</label></li>
+              </ul>
             </fieldset>
           </div>
           <button type="submit" class="filter-button">Применить</button>
@@ -185,97 +183,73 @@
         <img class src="img/product-1-min.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
         <h4><a class="title-catalog-item" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
         <p class="price-item">310 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-2-min.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
         <h4><a class="title-catalog-item" href="#">Сливочно-кофейное с кусочками шоколада</a></h4>
         <p class="price-item">380 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-3-min.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
         <h4><a class="title-catalog-item" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
         <p class="price-item">355 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-4-min.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
         <h4><a class="title-catalog-item" href="#">Сливочное крем-брюле с карамельной подливкой</a></h4>
         <p class="price-item">415 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-5-min.png" width="267" height="267" alt="Сливочное c брусничным джемом">
         <h4><a class="title-catalog-item" href="#">Сливочное c брусничным джемом</a></h4>
         <p class="price-item">325 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-6-min.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
         <h4><a class="title-catalog-item" href="#">Сливочно-черничное с цельными ягодами черники</a></h4>
         <p class="price-item">410 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-7-min.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
         <h4><a class="title-catalog-item" href="#">Сливочно-лимонное с карамельной присыпкой</a></h4>
         <p class="price-item">375 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-8-min.png" width="267" height="267" alt="Сливочное c шоколадной стружкой">
         <h4><a class="title-catalog-item" href="#">Сливочное c шоколадной стружкой</a></h4>
         <p class="price-item">320 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-9-min.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
         <h4><a class="title-catalog-item" href="#">Сливочно-ванильное с кусочками шоколада</a></h4>
         <p class="price-item">440 &#8381;<span class="fancy">/кг</span></p>
-        <div class="overlay">
-          <a href="#" class="button button-preview">Быстрый просмотр</a>
-        </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-10-min.png" width="267" height="267" alt="Сливочное c ментоловым сиропом">
         <h4><a class="title-catalog-item" href="#">Сливочное c ментоловым сиропом</a></h4>
         <p class="price-item">435 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-11-min.png" width="267" height="267" alt="Сливочное c кусочками черного шоколада">
         <h4><a class="title-catalog-item" href="#">Сливочное c кусочками черного шоколада</a></h4>
         <p class="price-item">355 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
       <article class="catalog-item">
         <img src="img/product-12-min.png" width="267" height="267" alt="Сливочное c мятным сиропом">
         <h4><a class="title-catalog-item" href="#">Сливочное c мятным сиропом</a></h4>
         <p class="price-item">420 &#8381;<span class="fancy">/кг</span></p>
-          <div class="overlay">
-            <a href="#" class="button button-preview">Быстрый просмотр</a>
-          </div>
+        <a href="#" class="button button-preview">Быстрый просмотр</a>
       </article>
     </section>
     <ul class="pagination-list">
