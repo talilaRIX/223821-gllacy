@@ -27,6 +27,7 @@
       evt.key === "Escape" &&
       !modalWrapper.classList.contains(".hidden")
     ) {
+      document.body.classList.remove("page-overlay");
       modalWrapper.classList.add("hidden");
     }
   });
