@@ -106,12 +106,12 @@ a {
 
 .button {
 	display: inline-block;
-	border: 1px solid transparent;
 	max-width: 100%;
 	text-align: center;
 	text-decoration: none;
 	padding: 0.68em 0.95em;
 	font-size: 18px;
+	font-family: inherit;
 	line-height: 1;
 	border-radius: 1.9em;
 	font-weight: 700;
@@ -132,7 +132,7 @@ a {
 		from(#f58669),
 		to(#ec6e5d)
 		);
-		background-image: linear-gradient(#f58669, #ec6e5d);
+	background-image: linear-gradient(#f58669, #ec6e5d);
 	}
 
 .button:active {
@@ -322,7 +322,7 @@ a {
 	position: absolute;
 	left: 15px;
 	top: 14px;
-	font-size: 14px;
+	font-size: 16px;
 	color: #999;
 }
 
@@ -524,7 +524,7 @@ a {
 	text-align: center;
 	margin-right: auto;
 	margin-left:  auto;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 }
 
 .slider .button {
@@ -603,7 +603,7 @@ a {
 .promo-banner p {
 	font-size: 18px;
 	margin: 0;
-	padding-top: 13px;
+	padding-top: 15px;
 	padding-left: 5px;
 	padding-bottom: 40px;
 }
@@ -633,7 +633,7 @@ a {
 	font-size: 16px;
 	background: url("../img/waffel.jpg")  0 0 repeat;
 	background-color: #f1e6cf;
-	border-radius: 20px;
+	border-radius: 17px;
 }
 
 .features .title-secondary {
@@ -712,7 +712,7 @@ a {
 	color:  #323232;
 	background: url("../img/strawberry-background.jpg") 63% 50% no-repeat;
 	background-color: #ffffff;
-	border-radius: 20px;
+	border-radius: 17px;
 	padding-top: 22px;
 	padding-left: 20px;
 	padding-right: 230px;
@@ -740,8 +740,8 @@ a {
 .subscribe-alt {
 	width: 562px;
 	padding: 5px;
-	background: url("../img/bg-post.png") 0 0 repeat;
-	border-radius: 20px;
+	background: url("../img/bg-post.svg") 0 0 no-repeat;
+	border-radius: 17px;
 }
 
 .subscribe {
@@ -750,7 +750,7 @@ a {
 	min-height: 208px;
 	padding: 28px 10px 20px 25px ;
 	background: #f9f7f5 0 0 no-repeat;
-	border-radius: 20px;
+	border-radius: 17px;
 }
 
 
@@ -788,12 +788,12 @@ a {
 
 .contacts {
 	width: 300px;
-	min-height: 305px;
-	padding-left: 25px;
-	padding-top: 25px;
+	min-height: 304px;
+	padding-left: 24px;
+	padding-top: 26px;
 	padding-right: 20px;
 	color: #323232;
-	border-radius: 15px;
+	border-radius: 17px;
 	background-color: #ffffff;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
 	position: absolute;
@@ -813,12 +813,12 @@ a {
 	font-size: 18px;
 	line-height: 1.33;
 	font-weight: bold;
-	margin-top: 5px;
-	margin-bottom: 18px;
+	margin-top: 2px;
+	margin-bottom: 20px;
 }
 
 .contact-details.phone {
-	margin-bottom: auto;
+	margin-bottom: 5px;
 }
 
 .contacts-button {
@@ -1101,7 +1101,7 @@ a {
 	padding: 8px 20px;
 	vertical-align: middle;
 	color: #ffffff;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
 	border: 2px solid #ffffff;
 	margin-top: 23px;
@@ -1247,7 +1247,7 @@ a {
 .catalog-item {
 	width: 267px;
 	text-align: center;
-	margin-bottom: 16px;
+	margin-bottom: 18px;
 	position: relative;
 }
 
@@ -1287,11 +1287,11 @@ a {
 
 .catalog-item:hover::before,
 .catalog-item:hover::after {
-  background-color: rgba(248, 247, 244, 0.3);
+  background-color: rgba(248, 247, 244, 0.2);
 }
 
 .catalog-item:hover::after {
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .button-preview {
@@ -1310,6 +1310,7 @@ a {
 
 .title-catalog-item {
 	font-weight: 500;
+	z-index: 3;
 }
 
 .price-item {
@@ -1331,8 +1332,8 @@ a {
 .catalog-hits .item-photo::before {
 	position: absolute;
 	content: "";
-	top: 20px;
-	left: 10px;
+	top: 0;
+	left: 0;
 	width: 60px;
 	height: 60px;
 	background: url("../img/hit.svg")
@@ -1371,8 +1372,8 @@ a {
 }
 
 .company-details {
-	margin-top: 24px;
-	margin-left: 50px;
+	margin-top: 23px;
+	margin-left: 46px;
 	width: 350px;
 	min-height: 30px;
 	display: flex;
@@ -1389,10 +1390,10 @@ a {
 
 .footer-copyright {
 	font-size: 12px;
-	margin-top: 8px;
+	margin-top: 6px;
 	width: 200px;
 	min-height: 60px;
-	margin-right: 0;
+	margin-right: 2px;
 }
 
 .footer-copyright p {
@@ -1453,7 +1454,7 @@ a {
 .range-controls {
 	position: relative;
 	padding: 17px 20px;
-	background: rgba(255, 255, 255, 0.3);
+	background: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
 }
 
@@ -1500,7 +1501,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 40px;
 	padding: 7px 10px;
 }
@@ -1536,7 +1537,7 @@ a {
 	border: 1px solid transparent;
 	border-radius: 40px;
 	font-size: inherit;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.2);
 	cursor: pointer;
 	-webkit-appearance: none;
 	-moz-appearance: none;
